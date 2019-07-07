@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title>Vielen Dank für Ihre Nachricht</title>
+        <style type="text/css">
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4acaa8;
+            font-size: 50px;
+            margin-top: 100px;
+        }
+
+        h2 {
+            color: #777;
+            text-align: center;
+        }
+
+        p {
+            color: #a6a6a6;
+            font-size: 22px;
+        }
+
+        .spinner {
+          margin: 60px auto 0;
+          width: 70px;
+          text-align: center;
+        }
+
+        .spinner > div {
+          width: 18px;
+          height: 18px;
+          background-color: #4acaa8;
+
+          border-radius: 100%;
+          display: inline-block;
+          -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+          animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+
+        .spinner .bounce1 {
+          -webkit-animation-delay: -0.32s;
+          animation-delay: -0.32s;
+        }
+
+        .spinner .bounce2 {
+          -webkit-animation-delay: -0.16s;
+          animation-delay: -0.16s;
+        }
+
+        @-webkit-keyframes sk-bouncedelay {
+          0%, 80%, 100% { -webkit-transform: scale(0) }
+          40% { -webkit-transform: scale(1.0) }
+        }
+
+        @keyframes sk-bouncedelay {
+          0%, 80%, 100% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+          } 40% {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+          }
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Vielen Dank für Ihre Nachricht</h1>
+        <h2>Ich werde mich schnellmöglichst bei Ihnen melden</h2>
+        <br>
+        <p>Sie werden jetzt auf die Startseite umgeleitet</p>
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+        <br>
+        <p style="font-size: 18px;margin-top: 100px;">Falls die Umleitung nicht funktioniert, dann klicken Sie bitte auf diesen Link: <a href="/" alt="Startseite">ra-lugowski.de</a>
+
+        <script type="text/javascript">
+            setTimeout(function() {
+                window.location.href = "http://www.ra-lugowski.de";
+            }, 5000);
+        </script>
+    </body>
+</html>
